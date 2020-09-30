@@ -8,14 +8,28 @@
 > For ease of deployment and testing, the API and UI for this design challenge have been dockerized. Ensure that you have [docker](https://docker.com) installed on the system where this code is to be tested.
 
 
-1. Clone the repository using `git clone {}`
-2. Spin up the docker containers using `docker-compose up`. This sets a Python api used for web scraping and a React ui to display the rank over time graph
-3. The API can be accessed locally @ [http://localhost:105](http://localhost:105)
-4. The UI can be accessed locally @ [http://localhost:8081](http://localhost:8081)
-5. A quick test of the API functionality can be done using a URL like [http://localhost:105/amazon-keyword-page-rank?keyword=headphones&product_id=B079B54QM2](http://localhost:105/amazon-keyword-page-rank?keyword=headphones&product_id=B079B54QM2) . You can replace the keyword and product_id paramters if needed.
+1. Clone the repository using 
+ ```
+ git clone https://github.com/omadoyeabraham/lightfront-design-challenge.git
+ ```      
 
 
-## Testing the Backend script
+2. Spin up the docker containers using 
+ ```
+ docker-compose up
+ ``` 
+   This sets a Python api used for web scraping and a React ui to display the rank over time graph     
+
+3. The API can be accessed locally @ [http://localhost:105](http://localhost:105)  
+   
+4. The UI can be accessed locally @ [http://localhost:8081](http://localhost:8081)  
+5. A quick test of the API functionality can be done using a URL like [http://localhost:105/amazon-keyword-page-rank?keyword=headphones&product_id=B079B54QM2](http://localhost:105/amazon-keyword-page-rank?keyword=headphones&product_id=B079B54QM2) .    
+    You can replace the keyword and product_id paramters if needed.  
+
+
+
+## Testing the Backend script  
+  
 
 In order to test the backend script, please follow the steps outlined below.
 
