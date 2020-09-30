@@ -1,0 +1,14 @@
+api/__pycache__
+api/.vscode
+api/chromedriver
+
+ui/node_modules
+ui/npm-debug.log
+ui/build
+
+api.dockerfile
+ui.dockerfile
+
+**/.git
+**/.DS_Store
+**/node_modules

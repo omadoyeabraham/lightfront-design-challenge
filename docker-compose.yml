@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  api:
+    container_name: lightfront-design-challenge-api
+    build:
+      context: .
+      dockerfile: api.dockerfile
+    volumes:
+      - ./api:/app
+    ports:
+      - "105:105"
+
+  ui:
+    container_name: lightfront-design-challenge-ui
+    build:
+      context: .
+      dockerfile: ui.dockerfile
+    volumes:
+      - "./ui:/app"
+      - "/app/node_modules"
+    ports:
+      - 8081:3000
+    links:
+      - api
+    environment:
+      - REACT_APP_GRAPHQL_API_URL="api:105"
+      - CHOKIDAR_USEPOLLING=true
+      - SHELL=/bin/bash
+    stdin_open: true
