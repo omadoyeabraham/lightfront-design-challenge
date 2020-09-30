@@ -6,8 +6,6 @@ ui/node_modules
 ui/npm-debug.log
 ui/build
 
-api.dockerfile
-ui.dockerfile
 
 **/.git
 **/.DS_Store

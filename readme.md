@@ -10,7 +10,7 @@
 
 1. Clone the repository using 
  ```
- git clone https://github.com/omadoyeabraham/lightfront-design-challenge.git
+ git clone https://github.com/omadoyeabraham/lightfront-design-challenge.git && cd lightfront-design-challenge
  ```      
 
 
